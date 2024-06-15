@@ -12,8 +12,8 @@ Identify trends in seat allotment patterns.
 - Frontend: HTML, CSS, JavaScript (templates- home.html,about.html static/data_analysis- home.css, about.css)
 * Backend: Django
 + Database: SQLite
-- Data Scraping: Selenium, Beautiful Soup (logging_in.py,data_scraping.py)
-* Data Cleaning: NumPy, Pandas (data-2016-2023.csv)
+- Data Scraping: Selenium, Beautiful Soup 
+* Data Cleaning: NumPy, Pandas (data-2016-2023dataa.csv)
 + Data Visualization: Chart.js (static/data_analysis-script.js)
 
 ## Command to run the project locally
