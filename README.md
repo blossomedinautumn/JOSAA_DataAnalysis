@@ -17,8 +17,6 @@ Identify trends in seat allotment patterns.
 + Data Visualization: Chart.js (static/data_analysis-script.js)
 
 ## Command to run the project locally
-- download the project directory to your local device 
-- download the dataset (2016-2023dataa.zip) from the data_analysis/static/data and save it as 2016-2023dataa.csv in the same location
 - python manage.py runserver
 - Then run the server locally on port 8000
 
