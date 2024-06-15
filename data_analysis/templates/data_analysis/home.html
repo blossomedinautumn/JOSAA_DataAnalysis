@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'data_analysis/home.css' %}">
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="{% static 'images/josaa logo.png' %}" alt="JOSAA logo" id="logo">
+            <div class="section">
+                <h3>संयुक्त सीट आवंटन प्राधिकरण</h3>
+                <h1 class="heading1">Joint Seat Allocation Authority</h1>
+                <h4 class="heading4">Admission and eCounselling Services for Session 2024</h4>
+            </div>
+        </div>
+    </header>
+    <nav class="navigation">
+        <a href="{% url 'home' %}" class="navcontent">Home</a>
+        <a href="{% url 'about' %}" class="navcontent">About</a>
+    </nav>
+
+   <main class="mainn">
+        <section class="gridd">
+            <div class="box2">
+                <div class="popular">
+                    <h2>Popular Questions</h2>
+                    <h3>Most famous questions on our website</h3>
+                </div>
+                <div class="box3">
+                    <a href="{% url 'popular_branch' %}">
+                        <p>Decoding Branch Popularity</p>
+                    </a>
+                </div>
+                <div class="box3">
+                    <a href="{% url 'inst_wise' %}">
+                        <p>General Information of engineering colleges in India</p>
+                    </a>
+                </div>
+                <div class="box3">
+                    <a href="{% url 'iits_preferred' %}">
+                       <p>Which IITs Do Students Prefer?</p>
+                    </a>   
+                </div>
+                <div class="box3">
+                    <a href="{% url 'cse' %}">
+                        <p>Popularity of CSE Programs in India</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-span-2">
+                <div class="grid grid-cols-1 gap-4 mt-4">
+                    <div class="box">
+                        <a href="{% url 'each_inst' %}">
+                            <h3 class="heading3">View Year wise Cut-off</h3>
+                        </a>
+                        <p>Our "View Year-wise Cut-off" feature is designed to help prospective students and their families gain insights into the admission trends for various engineering colleges participating in the Joint Seat Allocation Authority (JoSAA) process. This tool provides a comprehensive and user-friendly way to access historical cut-off ranks for different institutions, branches, and categories.</p>
+                    </div>
+                    <div class="box">
+                        <a href="{% url 'branch' %}">
+                            <h3 class="heading3">Analyse Gender wise cut-off trends</h3>
+                        </a>
+                        <p>Our "Analyse Gender-wise Cut-off Trends" feature is a powerful tool designed to provide deep insights into the admission patterns based on gender across various engineering colleges participating in the Joint Seat Allocation Authority (JoSAA) process. This feature helps prospective students understand how gender-specific cut-off ranks have evolved over the years, offering valuable information for making informed decisions.</p>
+                    </div>
+                    <div class="box">
+                        <a href="{% url 'round_analysis' %}">
+                            <h3 class="heading3">Round wise cut-off Analysis</h3>
+                        </a>
+                        <p>Our "Round-wise Cut-off Analysis" feature provides an in-depth look at the admission cut-off ranks for each round of the Joint Seat Allocation Authority (JoSAA) process. This tool is designed to help prospective students understand how the cut-off ranks evolve through different rounds of seat allocation, offering critical insights for strategic planning during the admission process.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="light-footer">
+            <div class="footer-links">
+                <a href="{% url 'copyright' %}">Copyright Policy</a> /
+                <a href="{% url 'privacy' %}">Privacy Policy</a> /
+                <a href="{% url 'hyperlink' %}">Hyperlink Policy</a> /
+                <a href="{% url 'terms_conditions' %}">Terms and Conditions</a> /
+                <a href="{% url 'help' %}">Help</a> /
+                <a href="{% url 'contact' %}">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>Content Owned and Managed by Joint Seat Allocation Authority (JoSAA)</p>
+                <p>Last Updated: Jun 05, 2024</p>
+            </div>
+            <div class="footer-logos">
+                <img src="{% static 'images/swaas_logo.png' %}" alt="SWaaS" class="footer-logo">
+                <img src="{% static 'images/nic_logo.jpg' %}" alt="NIC" class="footer-logo">
+                <img src="{% static 'images/digital_india_logo.jpg' %}" alt="Digital India" class="footer-logo">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

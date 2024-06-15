@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>{% block title %}Institute wise cut-off list{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'data_analysis/inst_wise.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="section">
+            <h1 class="heading1">Joint Seat Allocation Authority 2023</h1>
+        </div>
+    </header>
+    <nav class="navigation">
+        <a href="{% url 'home' %}" class="navcontent">Home</a>
+        <a href="{% url 'about' %}" class="navcontent">About</a>
+    </nav>
+
+    <div class="box2" id="#box2id">
+        <div class="popular">
+            <h2>Popular Questions</h2>
+            <h3>Most famous questions on our website</h3>
+        </div>
+        <div class="box3">
+            <a href="opening_closing.html">
+                <p>Opening and closing ranks 2023</p>
+            </a>
+        </div>
+        <div class="box3">
+            <p>Popular Branches</p>
+        </div>
+        <div class="box3">
+            <p>Which IITs are preffered by students</p>
+        </div>
+        <div class="box3">
+            <p>Seat allotments for CSE</p>
+        </div>
+    </div>
+    <h1>Institute wise cut-off list of engineering colleges in India</h1>
+    <div class="line">
+    </div>
+    <!-- <div class="box">
+        <h3>Indian Institute of Technology Madras</h3>
+        <img src="IITM logo.jpg" alt="IITM logo" class="imagee">
+        <p>Location: Chennai, Tamil Nadu</p>
+        <p>Established Year: 1959</p>
+        <p>NIRF Ranking: 1</p>
+    </div> -->
+    <div id="college-container" class="container">
+        <!-- College info will be injected here -->
+    </div>
+    <script src="{% static 'data_analysis/script.js' %}"></script>
+    <!-- <script src="data.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSAA Data Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <title>{% block title %}Hyperlink{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'data_analysis/home.css' %}">
+
+</head>
+ <body>
+   <header>
+        <div class="container">
+            <img src="{% static 'images/josaa logo.png' %}" alt="JOSAA logo" id="logo">
+            <div class="section">
+                <h3>संयुक्त सीट आवंटन प्राधिकरण</h3>
+                <h1 class="heading1">Joint Seat Allocation Authority</h1>
+                <h4 class="heading4">Admission and eCounselling Services for Session 2024</h4>
+            </div>
+        </div>
+    </header>
+    <nav class="navigation">
+        <a href="{% url 'home' %}" class="navcontent">Home</a>
+        <a href="{% url 'about' %}" class="navcontent">About</a>
+    </nav>
+
+    <div class="content">
+       <h1>HyperLink Policy</h1>
+       <br>
+       <h2>Links to external websites/portals</h2>
+       <br>
+       <p>At many places in this website, you shall find links to other websites/portals. This links have been placed for your convenience. Joint Seat Allocation Authority (JoSAA) is not responsible for the contents and reliability of the linked websites and does not necessarily endorse the views expressed in them. Mere presence of the link or its listing on this website should not be assumed as endorsement of any kind. We cannot guarantee that these links will work all the time and we have no control over availability of linked pages</p>
+       <br>
+       <h2>Links to Joint Seat Allocation Authority (JoSAA) Website by other Websites/Portals</h2>
+       <br>
+       <p>Prior permission is required before hyperlink are directed from any website/portal to this site. Permission for the same, stating the nature of the content on the pages from where the link has to be given and the exact language of the hyperlink should be obtained by sending a request to stake holder</p>
+      
+    </div>
+    <br>
+    <br>
+    <br><br>
+   <footer class="footer">
+        <div class="light-footer">
+            <div class="footer-links">
+                <a href="{% url 'copyright' %}">Copyright Policy</a> /
+                <a href="{% url 'privacy' %}">Privacy Policy</a> /
+                <a href="{% url 'hyperlink' %}">Hyperlink Policy</a> /
+                <a href="{% url 'terms_conditions' %}">Terms and Conditions</a> /
+                <a href="{% url 'help' %}">Help</a> /
+                <a href="{% url 'contact' %}">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>Content Owned and Managed by Joint Seat Allocation Authority (JoSAA)</p>
+                <p>Last Updated: Jun 05, 2024</p>
+            </div>
+            <div class="footer-logos">
+                <img src="{% static 'images/swaas_logo.png' %}" alt="SWaaS" class="footer-logo">
+                <img src="{% static 'images/nic_logo.jpg' %}" alt="NIC" class="footer-logo">
+                <img src="{% static 'images/digital_india_logo.jpg' %}" alt="Digital India" class="footer-logo">
+            </div>
+        </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+ </body>
+</html>
