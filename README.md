@@ -46,7 +46,7 @@ It provides features to:
 
 ## Roundwise cut-off Analysis
 - Round trends highlight the general trend of closing ranks throughout the rounds of the counselling process. This helps understand the likely range of changes to the closing ranks throught the counselling proces.
-- Users can get the round wise analysis of any institute by selecting the institute,seat type and branch. 
+- Users can get the round wise analysis of any institute by selecting the institute,seat type and branch
 - Users will get line graphs depicting the roundwise trends for each year at that institute.
 - ![roundwise trends](https://github.com/blossomedinautumn/JOSAA_DataAnalysis/blob/main/data_analysis/static/images/round-wise.png)
 
