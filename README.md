@@ -35,7 +35,7 @@ It provides features to:
  
 ## Know Popular Questions
 - Our website also answers the most popular questions students have during the counselling process.
-- Students can know what their peers are thinking and making informed decisions accordingly
+- Students can know what their peers are thinking and making informed decisions accordingly.
 - ![Popular questions](https://github.com/blossomedinautumn/JOSAA_DataAnalysis/blob/main/data_analysis/static/images/popular-question.png)
 
 ## Analyze year wise cut-off trends
