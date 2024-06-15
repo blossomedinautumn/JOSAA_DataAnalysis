@@ -1,0 +1,200 @@
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Common styles for header and navigation */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 20px;
+}
+
+#logo {
+    max-height: 100px;
+    margin-right: 20px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.section .heading1 {
+    margin: 10px 0 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.section .heading4 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.navigation {
+    background-color: #727272;
+    box-shadow: 0 1px 3px rgba(58, 52, 52, 0.356);
+    display: flex;
+    height: 2rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navcontent {
+    font-size: 15px;
+    margin-left: 100px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navcontent:hover {
+    color: #000000;
+}
+
+.mainn {
+    padding: 2rem 0;
+}
+
+.gridd {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5rem;
+}
+
+/* Box styles */
+.box, .boxcontent, .box2, .box3 {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.box {
+    width: 65%;
+}
+
+.box2 {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 30%;
+}
+
+.box3 {
+    padding: 8px;
+}
+
+.heading3 {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.heading3:hover {
+    color: rgb(213, 168, 69);
+}
+
+.imagee {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.popular {
+    display: inline;
+}
+
+/* Additional styles for the about page */
+.line {
+    background-color: rgba(24, 23, 23, 0.384);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0;
+    padding: 1px;
+    margin-top: 2px;
+    width: 99.5%;
+    margin-left: 2px;
+}
+
+.basicinfo {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.box1 {
+    display: flex;
+    margin-bottom: 120px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    background-color: #333;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #ccc;
+}
+
+.footer-info {
+    margin-bottom: 10px;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    max-height: 50px;
+    margin: 0 10px;
+}
+
+.content{
+    padding: 35px;
+}
