@@ -38,7 +38,7 @@ It provides features to:
 ## Know Popular Questions
 - Our website also answers the most popular questions students have during the counselling process.
 - Students can know what their peers are thinking and making informed decisions accordingly
-- [Popular questions](https://github.com/blossomedinautumn/JOSAA_DataAnalysis/blob/main/data_analysis/static/images/popular.png)
+- [Popular questions](data_analysis/static/images/popular.png)
 
 ## Analyze year wise cut-off trends
 - Yearwise cutoff trends highlight the trends of various programs offered by a particular institute over the years. This helps understand the popularity and perception of programs offered by the institute, and helps us predict the expected cutoff for a given year.
