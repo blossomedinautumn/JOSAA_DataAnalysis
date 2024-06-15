@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'data_analysis/styling.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="{% static 'data_analysis/josaa_logo.png' %}" alt="JOSAA logo" id="logo">
+            <div class="section">
+                <h3>संयुक्त सीट आवंटन प्राधिकरण</h3>
+                <h1 class="heading1">Joint Seat Allocation Authority</h1>
+                <h4 class="heading4">Admission and eCounselling Services for Session 2024</h4>
+            </div>
+        </div>
+    </header>
+    <nav class="navigation">
+        <a href="{% url 'home' %}" class="navcontent">Home</a>
+        <a href="{% url 'about' %}" class="navcontent">About</a>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="light-footer">
+            <div class="footer-links">
+                <a href="#">Copyright Policy</a> /
+                <a href="#">Privacy Policy</a> /
+                <a href="#">Hyperlink Policy</a> /
+                <a href="#">Terms and Conditions</a> /
+                <a href="#">Help</a> /
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>Content Owned and Managed by Joint Seat Allocation Authority (JoSAA)</p>
+                <p>Last Updated: Jun 05, 2024</p>
+            </div>
+            <div class="footer-logos">
+                <img src="{% static 'data_analysis/swaas_logo.png' %}" alt="SWaaS" class="footer-logo">
+                <img src="{% static 'data_analysis/nic_logo.jpg' %}" alt="NIC" class="footer-logo">
+                <img src="{% static 'data_analysis/digital_india_logo.jpg' %}" alt="Digital India" class="footer-logo">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

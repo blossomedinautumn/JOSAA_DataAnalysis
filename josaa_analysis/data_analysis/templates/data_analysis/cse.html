@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSAA Data Analysis</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="/static/data_analysis/cse.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="{% static 'images/josaa logo.png' %}" alt="JOSAA logo" id="logo">
+            <div class="section">
+                <h3>संयुक्त सीट आवंटन प्राधिकरण</h3>
+                <h1 class="heading1">Joint Seat Allocation Authority</h1>
+                <h4 class="heading4">Admission and eCounselling Services for Session 2024</h4>
+            </div>
+        </div>
+    </header>
+    <nav class="navigation">
+        <a href="{% url 'home' %}" class="navcontent">Home</a>
+        <a href="{% url 'about' %}" class="navcontent">About</a>
+    </nav>
+    <div class="content">
+        <h1>The CS Craze: Decoding Seat Allotment Trends in Computer Science Engineering (CSE) across India (2024)</h1>
+        <p>Computer Science Engineering (CSE) continues its reign as the most sought-after engineering specialization in India. This blog dives into the latest trends and information regarding seat allotments for CSE programs across Indian engineering colleges in 2024.</p>
+        <div class="branch-heading"><h2>Burning Bright: High Demand and Early Fill-up</h2></div>
+        <div class="branch">
+            <div class="branch-name">
+                 <h3>National Level</h3>
+            </div>
+            <div class="branch-info">
+                <p>Reports from entrance exams like JEE Main and Advanced indicate a surge in applications for CSE programs. This trend is expected to be reflected in upcoming seat allotment rounds for institutions like IITs and NITs.</p>
+            </div>
+        </div>
+        <div class="branch">
+            <div class="branch-name">
+                 <h3>State Level</h3>
+            </div>
+            <div class="branch-info">
+                <p>Similar trends are evident at the state level. News articles highlight cases where 100% of CSE seats filled up in the first round of counselling for specific universities, leaving limited options for students seeking these coveted spots.</p>
+            </div>
+        </div>
+        <div class="branch-heading"><h2>Factors Fueling the Fire</h2></div>
+        <div class="branch">
+            <div class="branch-name">
+                 <h3>Booming IT Industry</h3>
+            </div>
+            <div class="branch-info">
+                <p>India's thriving IT sector continues to create a high demand for skilled computer science professionals. This translates into lucrative job opportunities and high starting salaries for CSE graduates.</p>
+            </div>
+        </div>
+        <div class="branch">
+            <div class="branch-name">
+                 <h3>Evolving Tech Landscape</h3>
+            </div>
+            <div class="branch-info">
+                <p>Fields like Artificial Intelligence, Machine Learning, and Cybersecurity are witnessing explosive growth. CSE programs equip students with the necessary skills to thrive in these exciting new domains.</p>
+            </div>
+        </div>
+        <div class="branch-heading"><h2>Beyond the Numbers: What it Means for You</h2></div>
+        <div class="branch">
+            <div class="branch-name">
+                 <h3>Early Bird Gets the Seat</h3>
+            </div>
+            <div class="branch-info">
+                <p>With high competition, aiming for top CSE programs may require a strategic approach. Scoring well in entrance exams and applying early during counselling rounds will be crucial.</p>
+            </div>
+        </div>
+        <div class="branch">
+            <div class="branch-name">
+                 <h3>Exploring Alternatives</h3>
+            </div>
+            <div class="branch-info">
+                <p>While IITs and NITs remain prestigious, consider researching reputed private engineering colleges with strong CSE programs. These institutions may offer more flexibility during the application and counselling process.</p>
+            </div>
+        </div>
+        <div class="branch">
+            <div class="branch-name">
+                 <h3>Specialization is Key</h3>
+            </div>
+            <div class="branch-info">
+                <p>Many universities offer specializations within CSE, like AI, Data Science, or Cybersecurity. Researching these options can help you stand out from the crowd.</p>
+            </div>
+        </div>
+        <div class="branch-heading"><h2>Staying Informed: Resources for Aspiring CS Engineers</h2></div>
+        <div class="branch">
+            <div class="branch-name">
+                 <h3>Official Websites</h3>
+            </div>
+            <div class="branch-info">
+                <p>Regularly check the websites of universities and counselling bodies (like JoSAA) for the latest seat allotment information and counselling schedules.</p>
+            </div>
+        </div>
+        <div class="branch">
+            <div class="branch-name">
+                 <h3>News & Educational Portals</h3>
+            </div>
+            <div class="branch-info">
+                <p>Stay updated on trends and insights through news articles and educational portals focused on engineering admissions in India.</p>
+            </div>
+        </div>
+        <div class="branch">
+            <div class="branch-name">
+                 <h3>Counselling Experts</h3>
+            </div>
+            <div class="branch-info">
+                <p>Consider seeking guidance from experienced educational counsellors who can provide personalized advice based on your academic profile and aspirations.</p>
+            </div>
+        </div>
+        <div class="branch-heading"><h2>The Final Code: A Rewarding Journey Awaits</h2></div>
+        <div class="branch">
+            <div class="branch-info">
+                <p>While securing a seat in a top CSE program can be challenging, the rewards are substantial. Remember, a strong foundation in computer science coupled with dedication and a passion for technology can open doors to a fulfilling and successful career path. So, stay informed, strategize effectively, and chase your dream of becoming a future leader in the ever-evolving world of computer science!</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="light-footer">
+           <div class="footer-links">
+                <a href="{% url 'copyright' %}">Copyright Policy</a> /
+                <a href="{% url 'privacy' %}">Privacy Policy</a> /
+                <a href="{% url 'hyperlink' %}">Hyperlink Policy</a> /
+                <a href="{% url 'terms_conditions' %}">Terms and Conditions</a> /
+                <a href="{% url 'help' %}">Help</a> /
+                <a href="{% url 'contact' %}">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>Content Owned and Managed by Joint Seat Allocation Authority (JoSAA)</p>
+                <p>Last Updated: Jun 05, 2024</p>
+            </div>
+            <div class="footer-logos">
+                <img src="{% static 'images/swaas_logo.png' %}" alt="SWaaS" class="footer-logo">
+                <img src="{% static 'images/nic_logo.jpg' %}" alt="NIC" class="footer-logo">
+                <img src="{% static 'images/digital_india_logo.jpg' %}" alt="Digital India" class="footer-logo">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

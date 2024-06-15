@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'data_analysis/about.css' %}">
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="{% static 'images/josaa logo.png' %}" alt="JOSAA logo" id="logo">
+            <div class="section">
+                <h3>संयुक्त सीट आवंटन प्राधिकरण</h3>
+                <h1 class="heading1">Joint Seat Allocation Authority</h1>
+                <h4 class="heading4">Admission and eCounselling Services for Session 2024</h4>
+            </div>
+        </div>
+    </header>
+    <nav class="navigation">
+        <a href="{% url 'home' %}" class="navcontent">Home</a>
+        <a href="{% url 'about' %}" class="navcontent">About</a>
+    </nav>
+    <div class="basicinfo">
+        <h2>JoSAA</h2>
+        <div class="line">
+        </div>
+        <p>The Joint Seat Allocation Authority (JoSAA) 2024 has been set up by the Ministry of Education [erstwhile
+            Ministry of Human Resources Development (MHRD)] to manage and regulate the joint seat allocation for
+            admissions to 121 institutes for the academic year 2024-25. This includes 23 IITs, 31 NITs, IIEST
+            Shibpur, 26 IIITs and 40 Other-Government Funded Technical Institutes (Other-GFTIs). Admission to all
+            the academic programs offered by these Institutes will be made through a single platform.
+        </p>
+    </div>
+    <div class="box">
+        <div class="boxcontent">
+            <h3 class="heading3">Qualifying Examination</h3>
+            <ul>
+                <li>JEE (Advanced) 2024</li>
+                <li>JEE (Main) 2024 B.E./B.Tech.</li>
+                <li>JEE (Main) 2024 B.Arch.</li>
+                <li>JEE (Main) 2024 B.Planning</li>
+            </ul>
+        </div>
+        <div class="boxcontent">
+            <h3 class="heading3">Admitting Institutes</h3>
+            <ul>
+                <li>IITs</li>
+                <li>NITs, IIEST, IIITs (Triple-I-Ts) and other -GFTIs</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="light-footer">
+            <div class="footer-links">
+                <a href="{% url 'copyright' %}">Copyright Policy</a> /
+                <a href="{% url 'privacy' %}">Privacy Policy</a> /
+                <a href="{% url 'hyperlink' %}">Hyperlink Policy</a> /
+                <a href="{% url 'terms_conditions' %}">Terms and Conditions</a> /
+                <a href="{% url 'help' %}">Help</a> /
+                <a href="{% url 'contact' %}">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>Content Owned and Managed by Joint Seat Allocation Authority (JoSAA)</p>
+                <p>Last Updated: Jun 05, 2024</p>
+            </div>
+            <div class="footer-logos">
+                <img src="{% static 'images/swaas_logo.png' %}" alt="SWaaS" class="footer-logo">
+                <img src="{% static 'images/nic_logo.jpg' %}" alt="NIC" class="footer-logo">
+                <img src="{% static 'images/digital_india_logo.jpg' %}" alt="Digital India" class="footer-logo">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
